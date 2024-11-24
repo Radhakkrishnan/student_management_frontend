@@ -1,0 +1,109 @@
+body{
+ 
+  color: white;
+  background: linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url("bgimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mynav{
+  padding:1rem;
+}
+.nav-item{
+  margin:1rem;
+}
+.para{
+  padding:5rem;
+  width:80%;
+  margin:6% 10%;
+  background-color: rgba(188, 187, 187, 0.115);
+}
+.loginbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:10% 35%;
+  width: 30%;
+}
+.form{
+  padding:2rem;
+}
+input{
+  margin-bottom: 1rem;
+}
+.studentpage{
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: auto;
+  box-shadow: 0  4px 8px rgba(0, 0, 0, 0.195);
+}
+label{
+  margin-bottom: 0.5rem;
+}
+.tablebox{
+  padding:2rem;
+}
+table{
+  background-color: rgba(160, 160, 160, 0.273);
+  margin:auto;
+  width: 100%;
+}
+td,tr,thead{
+  padding:0.5rem;
+  text-align:center;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popupcontent{
+  background: rgba(255, 255, 255, 0.192);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.btncontainer{
+  padding:2rem;
+  display:flex;
+  justify-content: space-around;
+}
+.addbtn{
+  margin:1rem;
+}
+.mylink{
+  text-decoration: none;
+  position:relative;
+  color:white;
+  transition:color 0.3s ease-in;
+}
+.mylink:hover{
+  color:#d49a6a;
+}
+.mylink::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0;
+  height:2px;
+  background-color: #d49a6a;
+  transition: width 0.3s ease-in;
+}
+.mylink:hover::after{
+  width:100%;
+}
